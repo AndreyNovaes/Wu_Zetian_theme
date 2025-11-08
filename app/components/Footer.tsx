@@ -21,13 +21,6 @@ export default function Footer() {
             <ExternalLink className="w-5 h-5" />
           </a>
         </div>
-
-        {/* Divisor */}
-        <div className="border-t border-gray-700 pt-6 mt-6">
-          <p className="text-gray-400 text-sm">
-            © Wu Zetian Landing Page 2025 | Desenvolvido com Next.js e Tailwind CSS
-          </p>
-        </div>
       </div>
     </footer>
   );
