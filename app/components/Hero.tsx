@@ -6,11 +6,23 @@ import ChinesePattern from './ChinesePattern';
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
+  const [particles, setParticles] = useState<Array<{left: string; top: string; delay: string; duration: string}>>([]);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // Gerar partículas apenas no cliente para evitar hydration errors
+    const generatedParticles = [...Array(20)].map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${Math.random() * 5}s`,
+      duration: `${5 + Math.random() * 10}s`,
+    }));
+    setParticles(generatedParticles);
   }, []);
 
   const scrollToTimeline = () => {
@@ -39,15 +51,15 @@ export default function Hero() {
 
       {/* Partículas flutuantes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {particles.map((particle, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-imperial-gold rounded-full animate-float"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${5 + Math.random() * 10}s`,
+              left: particle.left,
+              top: particle.top,
+              animationDelay: particle.delay,
+              animationDuration: particle.duration,
               opacity: 0.3,
             }}
           />

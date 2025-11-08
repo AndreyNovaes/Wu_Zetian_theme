@@ -21,17 +21,17 @@ const images: GalleryImage[] = [
     description: 'Estátuas budistas que Wu Zetian patrocinou durante seu reinado',
   },
   {
-    url: 'https://images.unsplash.com/photo-1574873215145-e1e1e9f6e48f?w=800&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop',
     title: 'Caligrafia Imperial',
     description: 'A arte da escrita chinesa, valorizada na corte imperial',
   },
   {
-    url: 'https://images.unsplash.com/photo-1549413784-c51e6e8fb3c2?w=800&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1570214476695-19bd84b3f6fa?w=800&auto=format&fit=crop',
     title: 'Templos Sagrados',
     description: 'Templos construídos sob o patrocínio de Wu Zetian',
   },
   {
-    url: 'https://images.unsplash.com/photo-1590677794537-c3527e2f7ae1?w=800&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1604608281808-5159a76c4f18?w=800&auto=format&fit=crop',
     title: 'Dragão Imperial',
     description: 'O dragão, símbolo do poder imperial na dinastia Tang',
   },
