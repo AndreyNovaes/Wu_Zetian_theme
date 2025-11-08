@@ -1,3 +1,5 @@
+'use client';
+
 import { Skull, Star } from 'lucide-react';
 
 export default function LegacySection() {
