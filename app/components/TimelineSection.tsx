@@ -1,3 +1,5 @@
+'use client';
+
 import { Crown, Castle, Gem, Sword, Skull } from 'lucide-react';
 
 interface TimelineEvent {

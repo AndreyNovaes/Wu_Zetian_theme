@@ -1,3 +1,5 @@
+'use client';
+
 import { Users, Shield, Church, Wheat } from 'lucide-react';
 
 interface Achievement {
