@@ -118,11 +118,11 @@ export default function TimelineSection() {
         @keyframes slideInTimeline {
           from {
             opacity: 0;
-            transform: translateX(${index % 2 === 0 ? '50px' : '-50px'});
+            transform: scale(0.95) translateY(20px);
           }
           to {
             opacity: 1;
-            transform: translateX(0);
+            transform: scale(1) translateY(0);
           }
         }
 
